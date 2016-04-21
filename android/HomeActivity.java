@@ -22,7 +22,7 @@ public class HomeActivity extends Activity {
         LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
         
         Button button = new Button(this);
-        button.setText("Click or press any key to begin...");
+        button.setText("Laddar...");
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 HomeActivity.this.startKioskActivity();
@@ -41,7 +41,7 @@ public class HomeActivity extends Activity {
             public void run() {
                 HomeActivity.this.startKioskActivity();
             }
-        }, 20000); // 20 seconds
+        }, 5000); // 20 seconds
     }
     
     @Override
